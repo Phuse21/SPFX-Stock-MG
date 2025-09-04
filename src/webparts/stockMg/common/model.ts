@@ -1,8 +1,51 @@
 import { NumberProperty, Property, SPList, SPListItem } from "spfx-addon";
-import { CurrencyEnum, ItemsCategoryEnum, ListsEnum } from "./types";
+import { CurrencyEnum, CustomerTypeEnum, ItemsCategoryEnum, ListsEnum } from "./types";
 import * as Yup from 'yup';
 import * as strings from "StockMgWebPartStrings";   
 
+
+//customer model
+export class CustomerItem extends SPListItem{
+    @Property()
+    public PhoneNumber?: string = undefined;
+    @NumberProperty()
+    public TotalOrders?: number = undefined;
+    
+    @Property()
+    public CustomerType?: CustomerTypeEnum = undefined;
+
+    constructor(){
+        super(ListsEnum.Customers);
+    }
+
+    validate(info?: any): Record<string, any> {
+        return Yup.object().shape({
+            Title: Yup.string().required(strings.RequiredValidationMessage),
+            PhoneNumber: Yup.string().required(strings.RequiredValidationMessage),
+            CustomerType: Yup.mixed<CustomerTypeEnum>().oneOf(Object.values(CustomerTypeEnum), "Invalid Customer Type").required(strings.RequiredValidationMessage),
+        })
+
+        
+    }
+
+}
+
+
+export class CustomersList extends SPList{
+
+    constructor(){
+        super(ListsEnum.Customers);
+    }
+
+    createItem(): CustomerItem {
+        return new CustomerItem();
+    }
+}
+
+
+
+
+//stock model
 export class StockItem extends SPListItem {
     @NumberProperty()
     public StockQuantity?: number = undefined;
@@ -31,7 +74,6 @@ export class StockItem extends SPListItem {
     }
 }
 
-// Add export keyword here
 export class StockList extends SPList{
     constructor(){
         super(ListsEnum.Stock);

@@ -1,4 +1,8 @@
 declare interface IStockMgWebPartStrings {
+  PropertyPaneDescription: string;
+  DescriptionFieldLabel: string;
+  BasicGroupName: string;
+  NewCustomer: string;
   LoadingText: string;
   WorkingOnIt: string;
   Save: string;
@@ -32,21 +36,16 @@ declare interface IStockMgWebPartStrings {
     Currency: string;
     Id: string;
   },
-  WorkflowTask: {
-    Approver: string;
-    Comments: string;
-    Created: string;
-    AssignedTo: string;
+  Customer: {
     Title: string;
-    Status: string;
+    Id: string;
+    PhoneNumber: string;
+    Created: string;
+    CustomerType: string;
+    TotalOrders: string;
     Modified: string;
-    ApprovalStatus: string;
     Description: string;
-    WorkflowInstance: string;
-    Timestamp: string;
-    Attachments: string;
-    Instructions: string;
-    NextStage: string;
+    
   },
   PropertyPane:{
     Description: string;
@@ -61,6 +60,6 @@ declare interface IStockMgWebPartStrings {
 }
 
 declare module 'StockMgWebPartStrings' {
-  const strings: ICbgbpaWebPartStrings;
+  const strings: IStockMgWebPartStrings;
   export = strings;
 }

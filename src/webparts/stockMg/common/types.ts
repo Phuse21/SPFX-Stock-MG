@@ -27,6 +27,11 @@ export enum CurrencyEnum {
     GHC = "GHC"
 }
 
+export enum CustomerTypeEnum {
+    Individual = "Individual",
+    Company = "Company"
+}
+
 export interface ICommandBarItemPropsExt extends ICommandBarItemProps {
-    visible: boolean;
+    visible?: boolean;
 }

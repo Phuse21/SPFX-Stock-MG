@@ -1,6 +1,10 @@
 // eslint-disable-next-line no-undef
 define([], function () {
   return {
+    NewCustomer: "New Customer",
+  PropertyPaneDescription: "Description",
+  DescriptionFieldLabel: "Description",
+  BasicGroupName: "Group Name",
     LoadingText: "Loading...",
     WorkingOnIt: "Working on it...",
     Save: "Save",
@@ -34,22 +38,17 @@ define([], function () {
       Currency: "Currency",
       Id : "Item ID",  
     },
-    WorkflowTask: {
-      Approver: "Approver",
-      Comments: "Comments",
-      Created: "Created",
-      AssignedTo: "Assigned To",
-      Title: "Title",
-      Status: "Status",
-      Modified: "Modified",
-      ApprovalStatus: "Approval Status",
-      Description: "Description",
-      WorkflowInstance: "Workflow",
-      Timestamp: "Approval Date",
-      Attachments: "Attachments",
-      Instructions: "Message",
-      NextStage: "Next Stage"
-    },
+    Customer: {
+    Id: "Customer ID",
+    Title: "Customer Name",
+    PhoneNumber: "Phone Number",
+    Created: "Created",
+    CustomerType: "Customer Type",
+    TotalOrders: "Total Orders",
+    Modified: "Modified",
+    Description: "Description",
+    
+  },
     PropertyPane: {
       Description: "Configure the web part",
       BasicGroupName: "Settings",
