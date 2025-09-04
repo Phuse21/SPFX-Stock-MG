@@ -1,0 +1,60 @@
+// eslint-disable-next-line no-undef
+define([], function () {
+  return {
+    LoadingText: "Loading...",
+    WorkingOnIt: "Working on it...",
+    Save: "Save",
+    Cancel: "Cancel",
+    RequiredValidationMessage: "This field is required",
+    NegativeNumberValidationMessage: "Value must be a positive number",
+    Filter: "Filter",
+    Sort: "Sort",
+    Refresh: "Refresh",
+    Submit: "Submit",
+    Clear: "Clear",
+    NotItemsFound: "No items found",
+    Add: "New",
+    Update: "Update",
+    Delete: "Delete",
+    StartDate: "Request Start Date",
+    EndDate: "Request End Date",
+    StartWorkflow: "Start Workflow",
+    Print: "Print",
+    PrintPreview: "Print Preview",
+    AddTask: "Add Task",
+    FileName: "File Name",
+    Send: "Send",
+    View: "View",
+    Stock: {
+      Title: "Item",
+      Description: "Description",
+      StockQuantity: "Stock Quantity",
+      UnitPrice: "Unit Price",
+      ItemCategory: "Item Category",
+      Currency: "Currency",
+      Id : "Item ID",  
+    },
+    WorkflowTask: {
+      Approver: "Approver",
+      Comments: "Comments",
+      Created: "Created",
+      AssignedTo: "Assigned To",
+      Title: "Title",
+      Status: "Status",
+      Modified: "Modified",
+      ApprovalStatus: "Approval Status",
+      Description: "Description",
+      WorkflowInstance: "Workflow",
+      Timestamp: "Approval Date",
+      Attachments: "Attachments",
+      Instructions: "Message",
+      NextStage: "Next Stage"
+    },
+    PropertyPane: {
+      Description: "Configure the web part",
+      BasicGroupName: "Settings",
+      FlowUrlFieldLabel: "Power Automate Flow URL"
+    },
+    
+  }
+});
