@@ -16,7 +16,7 @@ define([], function () {
     Refresh: "Refresh",
     Submit: "Submit",
     Clear: "Clear",
-    NotItemsFound: "No items found",
+    NoItemsFound: "No items found",
     Add: "New",
     Update: "Update",
     Delete: "Delete",
@@ -49,6 +49,23 @@ define([], function () {
     Description: "Description",
     
   },
+    Order: {
+      Title: "Order ID",
+    Id: "ID",
+    Item: "Item",
+    QuantityOrdered: "Quantity",
+    UnitPrice: "Unit Price",
+    TotalPrice: "Total Price",
+    OrderDate: "Order Date",
+    Currency: "Currency",
+    OrderStatus: "Order Status",
+    Customer: "Customer",
+    Created: "Created",
+    TotalOrders: "Total Orders",
+    Modified: "Modified",
+    Description: "Description",
+    NewOrder: "New Order"
+    },
     PropertyPane: {
       Description: "Configure the web part",
       BasicGroupName: "Settings",

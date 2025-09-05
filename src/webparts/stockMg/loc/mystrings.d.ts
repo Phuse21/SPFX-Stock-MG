@@ -14,7 +14,7 @@ declare interface IStockMgWebPartStrings {
   Refresh: string;
   Submit: string;
   Clear: string;
-  NotItemsFound: string;
+  NoItemsFound: string;
   Add: string;
   Update: string;
   Delete: string;
@@ -45,18 +45,29 @@ declare interface IStockMgWebPartStrings {
     TotalOrders: string;
     Modified: string;
     Description: string;
+   
     
   },
-  PropertyPane:{
-    Description: string;
-    BasicGroupName: string;
-    FlowUrlFieldLabel: string;
-  },
-  RequestDocument:{
+  Order: {
+    Title: string;
+    Id: string;
+    Item: string;
+    QuantityOrdered: string;
+    UnitPrice: string;
+    TotalPrice: string;
+    OrderDate: string;
+    Currency: string;
+    OrderStatus: string;
+    Customer: string;
     Created: string;
-    CreatedBy: string;
-    Name: string;
-  }
+    TotalOrders: string;
+    Modified: string;
+    Description: string;
+     NewOrder: string;
+    
+  },
+  
+
 }
 
 declare module 'StockMgWebPartStrings' {

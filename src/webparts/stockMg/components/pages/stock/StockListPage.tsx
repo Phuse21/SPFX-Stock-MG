@@ -250,7 +250,7 @@ const { push } = NavigationStore.useStoreActions(actions => actions);
     columns={columns}
     selectionMode={SelectionMode.none}
     onRenderMissingItem={onRenderMissingItem}
-    emptyMessage={strings.NotItemsFound}
+    emptyMessage={strings.NoItemsFound}
     isLoading={isLoading}
     
     />

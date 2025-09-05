@@ -264,7 +264,7 @@ export const CustomerListPage: React.FC<ICustomerListPageProps> = () => {
                 columns={columns}
                 onRenderMissingItem={onRenderMissingItem}
                 selectionMode={SelectionMode.none}
-                emptyMessage={strings.NotItemsFound}
+                emptyMessage={strings.NoItemsFound}
                 isLoading={isLoading}
             />
         </ScrollableContent>

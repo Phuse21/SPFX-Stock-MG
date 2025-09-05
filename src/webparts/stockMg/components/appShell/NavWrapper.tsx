@@ -4,7 +4,7 @@ import NavigationStore from "../layout/navigationStore"
 import { CustomerListPage } from "../pages/customers/CustomerListPage";
 import { StockListPage } from "../pages/stock/StockListPage";
 import Sidebar from "./Sidebar";
-import { OdersListPage } from "../pages/orders/OrdersListPage";
+import { OrdersListPage } from "../pages/orders/OrdersListPage";
 
 
 export const NavWrapper: React.FC = () => {
@@ -19,7 +19,7 @@ export const NavWrapper: React.FC = () => {
                 reset({ key: 'customers', component: <CustomerListPage />, title: 'Customers' });
                 break;
             case 'orders':
-                reset({ key: 'orders', component: <OdersListPage />, title: 'Orders' });
+                reset({ key: 'orders', component: <OrdersListPage />, title: 'Orders' });
                 break;
         }
     }, []);
